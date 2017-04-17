@@ -1,0 +1,13 @@
+import os
+import pickle
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+from scipy.signal import find_peaks_cwt
+
+# Load Chessboard Images
+fname = 'Camera-Calibration-Images/calibration{}.jpg'.format(2)
+img = cv2.imread(fname)
+cv2.imshow('Window',img)
+cv2.waitKey(0)
